@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Desafios | Recology</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark menu">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Recology</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuNavegacao">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="recursos.html">Recursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dicas.html">Dicas</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="desafios.html">Desafios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="topo">
+        <div class="container">
+            <h1>Desafios sustentáveis</h1>
+            <p>Marque cada desafio que você cumprir. Seu progresso fica salvo neste navegador.</p>
+        </div>
+    </header>
+
+    <section class="secao">
+        <div class="container">
+
+            <!-- PROGRESSO -->
+            <div class="mb-5">
+                <div class="d-flex justify-content-between mb-2">
+                    <strong>Seu progresso</strong>
+                    <span id="textoProgresso">0 de 0</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" id="barraProgresso" role="progressbar" style="width: 0%">0%</div>
+                </div>
+            </div>
+
+            <!-- DESAFIOS -->
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-desafio h-100 p-3">
+                        <div class="card-body">
+                            <h3>🚿 Banho de 5 minutos</h3>
+                            <p>Tome banhos de no máximo 5 minutos durante uma semana inteira.</p>
+                            <div class="form-check">
+                                <input class="form-check-input check" type="checkbox" id="d1" data-id="d1">
+                                <label class="form-check-label" for="d1">Desafio cumprido</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-desafio h-100 p-3">
+                        <div class="card-body">
+                            <h3>💡 Caça aos aparelhos</h3>
+                            <p>Desligue da tomada tudo o que estiver em modo de espera antes de dormir.</p>
+                            <div class="form-check">
+                                <input class="form-check-input check" type="checkbox" id="d2" data-id="d2">
+                                <label class="form-check-label" for="d2">Desafio cumprido</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-desafio h-100 p-3">
+                        <div class="card-body">
+                            <h3>🍎 Zero sobras</h3>
+                            <p>Fique três dias sem jogar nenhum alimento fora.</p>
+                            <div class="form-check">
+                                <input class="form-check-input check" type="checkbox" id="d3" data-id="d3">
+                                <label class="form-check-label" for="d3">Desafio cumprido</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-desafio h-100 p-3">
+                        <div class="card-body">
+                            <h3>♻️ Coleta seletiva</h3>
+                            <p>Separe o lixo reciclável do orgânico durante uma semana.</p>
+                            <div class="form-check">
+                                <input class="form-check-input check" type="checkbox" id="d4" data-id="d4">
+                                <label class="form-check-label" for="d4">Desafio cumprido</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-desafio h-100 p-3">
+                        <div class="card-body">
+                            <h3>🛍️ Sacola própria</h3>
+                            <p>Use apenas sacolas reutilizáveis em todas as compras da semana.</p>
+                            <div class="form-check">
+                                <input class="form-check-input check" type="checkbox" id="d5" data-id="d5">
+                                <label class="form-check-label" for="d5">Desafio cumprido</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-desafio h-100 p-3">
+                        <div class="card-body">
+                            <h3>🚲 Transporte verde</h3>
+                            <p>Substitua um trajeto de carro por caminhada, bicicleta ou transporte coletivo.</p>
+                            <div class="form-check">
+                                <input class="form-check-input check" type="checkbox" id="d6" data-id="d6">
+                                <label class="form-check-label" for="d6">Desafio cumprido</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-5">
+                <button class="btn btn-outline-success" id="btnReiniciar">Reiniciar desafios</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="frase" id="mensagemFinal">
+        <div class="container">
+            <h2>Menos desperdício, mais consciência.</h2>
+            <p id="mensagemProgresso">Cada escolha faz diferença para o futuro do planeta.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Recology © 2026</p>
+            <p>Cada ação importa.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/desafios.js"></script>
+</body>
+</html>
