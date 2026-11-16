@@ -274,6 +274,91 @@ footer {
     font-weight: bold;
 }
 
+/* DESAFIOS */
+
+.card-desafio {
+    background-color: white;
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+.card-desafio.feito {
+    background-color: #e1f0df;
+    box-shadow: 0 0 0 2px #287747;
+}
+
+.card-desafio h3 {
+    font-size: 20px;
+    color: #287747;
+    font-weight: bold;
+}
+
+.card-desafio p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.form-check-input:checked {
+    background-color: #287747;
+    border-color: #287747;
+}
+
+.progress {
+    height: 22px;
+    background-color: #cde4c6;
+}
+
+.progress-bar {
+    background-color: #287747;
+    transition: width 0.4s;
+}
+
+/* RECURSOS (PÁGINA) */
+
+.bloco {
+    padding: 70px 0;
+}
+
+.bloco:nth-of-type(even) {
+    background-color: #eaf2e7;
+}
+
+.bloco h2 {
+    color: #194d32;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.bloco p {
+    line-height: 1.8;
+}
+
+.bloco ul {
+    padding-left: 20px;
+    line-height: 1.9;
+}
+
+.emoji {
+    font-size: 90px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.curiosidade {
+    background-color: #194d32;
+    color: white;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
 /* RESPONSIVIDADE */
 
 @media (max-width: 768px) {

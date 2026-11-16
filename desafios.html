@@ -13,26 +13,29 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark menu">
+    <nav class="navbar navbar-expand-lg navbar-dark menu" aria-label="Menu principal">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">Recology</a>
+        <a class="navbar-brand fw-bold" href="index.html">Recology</a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacao">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacao" aria-controls="menuNavegacao" aria-expanded="false" aria-label="Abrir menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="menuNavegacao">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="registro.html">Registrar</a></li>
                     <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
                     <li class="nav-item"><a class="nav-link" href="recursos.html">Recursos</a></li>
                     <li class="nav-item"><a class="nav-link" href="dicas.html">Dicas</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="desafios.html">Desafios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="desafios.html">Desafios</a></li>
                     <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <main>
 
     <header class="topo">
         <div class="container">
@@ -151,6 +154,8 @@
             <p id="mensagemProgresso">Cada escolha faz diferença para o futuro do planeta.</p>
         </div>
     </section>
+
+    </main>
 
     <footer>
         <div class="container">
