@@ -359,6 +359,24 @@ footer {
     line-height: 1.6;
 }
 
+/* DICAS (ACCORDION) */
+
+.accordion-button:not(.collapsed) {
+    background-color: #e1f0df;
+    color: #194d32;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    border-color: #287747;
+    box-shadow: 0 0 0 0.2rem rgba(40, 119, 71, 0.25);
+}
+
+.accordion-body ul {
+    padding-left: 20px;
+    line-height: 1.9;
+}
+
 /* RESPONSIVIDADE */
 
 @media (max-width: 768px) {
