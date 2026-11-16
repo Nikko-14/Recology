@@ -1,0 +1,181 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f8f3;
+    color: #263b2c;
+    font-family: Arial, sans-serif;
+}
+
+/* MENU */
+
+.menu {
+    background-color: #194d32;
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 25px;
+}
+
+.navbar-brand span {
+    color: #a9d18e;
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #a9d18e !important;
+}
+
+/* INÍCIO */
+
+.inicio {
+    min-height: 520px;
+    padding: 120px 0;
+    display: flex;
+    align-items: center;
+
+    background: linear-gradient(
+        120deg,
+        #e1f0df,
+        #f5f8f3
+    );
+}
+
+.conteudo h1 {
+    font-size: 48px;
+    color: #194d32;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.conteudo p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* BOTÃO */
+
+.btn-success {
+    background-color: #287747;
+    border-color: #287747;
+}
+
+.btn-success:hover {
+    background-color: #194d32;
+    border-color: #194d32;
+}
+
+/* RECURSOS */
+
+.recursos {
+    padding: 80px 0;
+    background-color: #eaf2e7;
+    text-align: center;
+}
+
+.recurso-card {
+    border: none;
+    border-radius: 14px;
+    padding-top: 20px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+
+    transition: 0.3s;
+}
+
+.recurso-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.icone {
+    font-size: 45px;
+    padding-top: 10px;
+}
+
+.recurso-card h3 {
+    color: #287747;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.recurso-card p {
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* FRASE */
+
+.frase {
+    background-color: #194d32;
+    color: white;
+    padding: 65px 0;
+    text-align: center;
+}
+
+.frase h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.frase p {
+    color: #cde4c6;
+}
+
+/* RODAPÉ */
+
+footer {
+    background-color: #123923;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 14px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+
+    .inicio {
+        padding: 80px 0;
+    }
+
+    .conteudo h1 {
+        font-size: 36px;
+    }
+
+    .sobre,
+    .recursos {
+        padding: 55px 0;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .conteudo h1 {
+        font-size: 30px;
+    }
+
+    .conteudo p {
+        font-size: 16px;
+    }
+
+}
