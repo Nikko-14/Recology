@@ -1,4 +1,6 @@
-/* CONFIGURAÇÕES GERAIS */
+/* ============================
+   CONFIGURAÇÕES GERAIS
+   ============================ */
 
 * {
     margin: 0;
@@ -16,24 +18,21 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* MENU */
+/* ============================
+   MENU
+   ============================ */
 
 .menu {
     background-color: #194d32;
-    padding: 15px 0;
+    padding: 12px 0;
 }
 
 .navbar-brand {
-    font-size: 25px;
-}
-
-.navbar-brand span {
-    color: #a9d18e;
+    font-size: 24px;
 }
 
 .nav-link {
     color: white !important;
-    margin-left: 15px;
     transition: 0.3s;
 }
 
@@ -46,49 +45,9 @@ body {
     font-weight: bold;
 }
 
-/* INÍCIO */
-
-.inicio {
-    min-height: 520px;
-    padding: 120px 0;
-    display: flex;
-    align-items: center;
-    background: linear-gradient(120deg, #e1f0df, #f5f8f3);
-}
-
-.conteudo h1 {
-    font-size: 48px;
-    color: #194d32;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.conteudo p {
-    font-size: 18px;
-    line-height: 1.7;
-    margin-bottom: 30px;
-}
-
-/* IMAGEM DO INÍCIO */
-
-.imagem-inicio {
-    display: block;
-    width: 100%;
-    max-height: 380px;
-    object-fit: cover;
-    border-radius: 20px;
-    margin-top: 35px;
-    border: 6px solid white;
-    box-shadow: 0 12px 30px rgba(25, 77, 50, 0.25);
-    transition: 0.4s;
-}
-
-.imagem-inicio:hover {
-    transform: scale(1.02);
-    box-shadow: 0 16px 40px rgba(25, 77, 50, 0.35);
-}
-
-/* BOTÃO */
+/* ============================
+   BOTÕES
+   ============================ */
 
 .btn-success {
     background-color: #287747;
@@ -110,7 +69,51 @@ body {
     border-color: #287747;
 }
 
-/* TÍTULOS DE SEÇÃO */
+/* ============================
+   INÍCIO
+   ============================ */
+
+.inicio {
+    min-height: 420px;
+    padding: 60px 0;
+    display: flex;               /* Flexbox: centraliza o conteúdo na vertical */
+    align-items: center;
+    background: linear-gradient(120deg, #e1f0df, #f5f8f3);
+}
+
+.conteudo h1 {
+    font-size: 30px;
+    color: #194d32;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.conteudo p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.imagem-inicio {
+    display: block;
+    width: 100%;
+    max-height: 240px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-top: 30px;
+    border: 4px solid white;
+    box-shadow: 0 12px 30px rgba(25, 77, 50, 0.25);
+    transition: 0.4s;
+}
+
+.imagem-inicio:hover {
+    transform: scale(1.02);
+    box-shadow: 0 16px 40px rgba(25, 77, 50, 0.35);
+}
+
+/* ============================
+   TÍTULOS E SEÇÕES
+   ============================ */
 
 .titulo {
     color: #194d32;
@@ -120,13 +123,44 @@ body {
 
 .subtitulo {
     color: #5b7262;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
 }
 
-/* RECURSOS INICIO */
+.secao {
+    padding: 45px 0;
+}
+
+.fundo-verde {
+    background-color: #eaf2e7;
+}
+
+/* Cabeçalho das páginas internas */
+.topo {
+    background: linear-gradient(120deg, #e1f0df, #f5f8f3);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.topo h1 {
+    color: #194d32;
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.topo p {
+    font-size: 16px;
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* ============================
+   RECURSOS (HOME)
+   ============================ */
 
 .recursos {
-    padding: 80px 0;
+    padding: 50px 0;
     background-color: #eaf2e7;
     text-align: center;
 }
@@ -135,13 +169,13 @@ body {
     border: none;
     border-radius: 14px;
     padding-top: 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
     transition: 0.3s;
 }
 
 .card-recurso:hover {
     transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 .icone {
@@ -160,25 +194,25 @@ body {
     font-size: 15px;
 }
 
-/* FRASE */
+/* ============================
+   FRASE E RODAPÉ
+   ============================ */
 
 .frase {
     background-color: #194d32;
     color: white;
-    padding: 65px 0;
+    padding: 50px 0;
     text-align: center;
 }
 
 .frase h2 {
-    font-size: 30px;
+    font-size: 24px;
     margin-bottom: 12px;
 }
 
 .frase p {
     color: #cde4c6;
 }
-
-/* RODAPÉ */
 
 footer {
     background-color: #123923;
@@ -189,66 +223,37 @@ footer {
 }
 
 /* ============================
-   PÁGINAS DE DENTRO DO SITE
+   SOBRE
    ============================ */
 
-.topo {
-    background: linear-gradient(120deg, #e1f0df, #f5f8f3);
-    padding: 80px 0;
-    text-align: center;
-}
-
-.topo h1 {
-    color: #194d32;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.topo p {
-    font-size: 18px;
-    max-width: 650px;
-    margin: 0 auto;
-    line-height: 1.6;
-}
-
-.secao {
-    padding: 70px 0;
-}
-
-.fundo-verde {
-    background-color: #eaf2e7;
-}
-
-/* SOBRE */
-
 .sobre {
-    padding: 70px 0;
+    padding: 45px 0;
 }
 
 .sobre p {
     line-height: 1.8;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .emoji-sobre {
-    font-size: 110px;
+    font-size: 80px;
     text-align: center;
     background-color: #e1f0df;
     border-radius: 20px;
-    padding: 40px 0;
+    padding: 30px 0;
 }
 
 .card-numero {
     background-color: white;
     border-radius: 14px;
-    padding: 28px 15px;
+    padding: 24px 12px;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
     height: 100%;
 }
 
 .card-numero .numero {
-    font-size: 38px;
+    font-size: 32px;
     font-weight: bold;
     color: #287747;
 }
@@ -265,7 +270,7 @@ footer {
     border-radius: 10px;
     padding: 20px;
     height: 100%;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .card-valor h3 {
@@ -274,13 +279,81 @@ footer {
     font-weight: bold;
 }
 
-/* DESAFIOS */
+/* ============================
+   RECURSOS (PÁGINA)
+   ============================ */
+
+.bloco {
+    padding: 45px 0;
+}
+
+.bloco:nth-of-type(even) {
+    background-color: #eaf2e7;
+}
+
+.bloco h2 {
+    color: #194d32;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.bloco p {
+    line-height: 1.8;
+}
+
+.bloco ul {
+    padding-left: 20px;
+    line-height: 1.9;
+}
+
+.emoji {
+    font-size: 70px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.curiosidade {
+    background-color: #194d32;
+    color: white;
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* ============================
+   DICAS (ACCORDION)
+   ============================ */
+
+.accordion-button:not(.collapsed) {
+    background-color: #e1f0df;
+    color: #194d32;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    border-color: #287747;
+    box-shadow: 0 0 0 0.2rem rgba(40, 119, 71, 0.25);
+}
+
+.accordion-body ul {
+    padding-left: 20px;
+    line-height: 1.9;
+}
+
+/* ============================
+   DESAFIOS
+   ============================ */
 
 .card-desafio {
     background-color: white;
     border: none;
     border-radius: 14px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
     transition: 0.3s;
 }
 
@@ -315,111 +388,414 @@ footer {
     transition: width 0.4s;
 }
 
-/* RECURSOS (PÁGINA) */
+/* ============================
+   QUIZ
+   ============================ */
 
-.bloco {
-    padding: 70px 0;
+.quiz {
+    background-color: white;
+    border-radius: 16px;
+    padding: 22px;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
-.bloco:nth-of-type(even) {
-    background-color: #eaf2e7;
-}
-
-.bloco h2 {
+.quiz h2 {
+    font-size: 21px;
     color: #194d32;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-.bloco p {
-    line-height: 1.8;
+.contagem {
+    color: #5b7262;
+    font-size: 14px;
+    margin-bottom: 8px;
 }
 
-.bloco ul {
-    padding-left: 20px;
-    line-height: 1.9;
+.opcao {
+    text-align: left;
+    padding: 12px 16px;
 }
 
-.emoji {
-    font-size: 90px;
-    text-align: center;
-    background-color: white;
-    border-radius: 20px;
-    padding: 40px 0;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
-}
-
-.curiosidade {
-    background-color: #194d32;
+.opcao.certa {
+    background-color: #287747;
+    border-color: #287747;
     color: white;
-    border-radius: 12px;
-    padding: 18px 22px;
+}
+
+.opcao.errada {
+    background-color: #c0392b;
+    border-color: #c0392b;
+    color: white;
+}
+
+.resposta {
     margin-top: 20px;
-    font-size: 15px;
+    padding: 14px 18px;
+    border-radius: 10px;
+    background-color: #eaf2e7;
     line-height: 1.6;
 }
 
-/* DICAS (ACCORDION) */
+.resultado {
+    text-align: center;
+}
 
-.accordion-button:not(.collapsed) {
+.resultado .nota {
+    font-size: 54px;
+    font-weight: bold;
+    color: #287747;
+}
+
+/* ============================
+   REGISTRO (formulário, lista e painel)
+   ============================ */
+
+/* Grid: no celular tudo em uma coluna */
+.layout-registro {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.caixa {
+    background-color: white;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    align-self: start;
+}
+
+.aviso-privacidade {
+    background-color: #eaf2e7;
+    border-left: 4px solid #287747;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+/* Flexbox: botões lado a lado, quebrando linha se faltar espaço */
+.acoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* Totais por tipo: 3 colunas */
+.totais {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.total-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 6px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 12px;
+}
+
+.total-item strong {
+    color: #287747;
+    font-size: 14px;
+}
+
+/* Lista de registros: 1 coluna no celular */
+.lista-registros {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.card-registro {
+    background-color: white;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-registro-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-registro h3 {
+    font-size: 18px;
+    color: #287747;
+    font-weight: bold;
+}
+
+.selo {
     background-color: #e1f0df;
     color: #194d32;
-    box-shadow: none;
+    border-radius: 20px;
+    padding: 3px 10px;
+    font-size: 12px;
+    white-space: nowrap;
 }
 
-.accordion-button:focus {
-    border-color: #287747;
-    box-shadow: 0 0 0 0.2rem rgba(40, 119, 71, 0.25);
+.descricao-registro {
+    line-height: 1.5;
+    overflow-wrap: anywhere;      /* evita texto longo estourar o cartão */
 }
 
-.accordion-body ul {
-    padding-left: 20px;
-    line-height: 1.9;
+.detalhes-registro {
+    font-size: 13px;
+    color: #5b7262;
 }
 
-/* RESPONSIVIDADE */
+.vazio {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    color: #5b7262;
+}
 
-@media (max-width: 768px) {
+/* Painel de atividades */
+.painel-log {
+    list-style: none;
+    background-color: white;
+    border-radius: 12px;
+    padding: 8px;
+    max-height: 320px;
+    overflow-y: auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.log-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 10px 12px;
+    border-bottom: 1px solid #e1ece0;
+    border-left: 4px solid #287747;
+    font-size: 14px;
+}
+
+.log-item:last-child {
+    border-bottom: none;
+}
+
+.log-item time {
+    color: #5b7262;
+    font-size: 13px;
+}
+
+.log-erro {
+    border-left-color: #c0392b;
+}
+
+.log-erro span {
+    color: #c0392b;
+}
+
+.log-vazio {
+    padding: 14px;
+    text-align: center;
+    color: #5b7262;
+}
+
+/* ============================
+   TABLET — a partir de 768px
+   ============================ */
+
+@media (min-width: 768px) {
+
+    .menu {
+        padding: 15px 0;
+    }
+
+    .navbar-brand {
+        font-size: 25px;
+    }
+
+    .nav-link {
+        margin-left: 12px;
+    }
 
     .inicio {
-        padding: 80px 0;
+        min-height: 480px;
+        padding: 90px 0;
     }
 
     .conteudo h1 {
-        font-size: 36px;
-    }
-
-    .imagem-inicio {
-        max-height: 260px;
-        border-width: 4px;
-        border-radius: 14px;
-    }
-
-    .sobre,
-    .recursos,
-    .secao,
-    .bloco {
-        padding: 55px 0;
-    }
-
-    .topo {
-        padding: 60px 0;
-    }
-
-    .quiz {
-        padding: 22px;
-    }
-
-}
-
-@media (max-width: 500px) {
-
-    .conteudo h1 {
-        font-size: 30px;
+        font-size: 40px;
+        margin-bottom: 20px;
     }
 
     .conteudo p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .imagem-inicio {
+        max-height: 320px;
+        border-width: 6px;
+        border-radius: 20px;
+    }
+
+    .secao,
+    .sobre,
+    .bloco {
+        padding: 60px 0;
+    }
+
+    .recursos {
+        padding: 65px 0;
+    }
+
+    .topo {
+        padding: 65px 0;
+    }
+
+    .topo h1 {
+        font-size: 34px;
+    }
+
+    .topo p {
+        font-size: 18px;
+    }
+
+    .frase {
+        padding: 60px 0;
+    }
+
+    .frase h2 {
+        font-size: 28px;
+    }
+
+    .emoji-sobre {
+        font-size: 100px;
+        padding: 40px 0;
+    }
+
+    .emoji {
+        font-size: 80px;
+        padding: 35px 0;
+    }
+
+    .card-numero .numero {
+        font-size: 36px;
+    }
+
+    .quiz {
+        padding: 35px;
+    }
+
+    .quiz h2 {
+        font-size: 24px;
+    }
+
+    .caixa {
+        padding: 28px;
+    }
+
+    .total-item {
+        font-size: 14px;
+    }
+
+    .total-item strong {
         font-size: 16px;
     }
 
+    /* Lista de registros em 2 colunas */
+    .lista-registros {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Linha do painel: data, ação e resultado lado a lado */
+    .log-item {
+        flex-direction: row;
+        gap: 16px;
+        align-items: baseline;
+    }
+
+    .log-item time {
+        min-width: 130px;
+    }
+
+    .log-item strong {
+        min-width: 90px;
+    }
+}
+
+/* ============================
+   DESKTOP
+   ============================ */
+
+@media (min-width: 992px) {
+
+    .inicio {
+        padding: 110px 0;
+        min-height: 520px;
+    }
+
+    .conteudo h1 {
+        font-size: 48px;
+    }
+
+    .imagem-inicio {
+        max-height: 380px;
+    }
+
+    .secao,
+    .sobre,
+    .bloco {
+        padding: 70px 0;
+    }
+
+    .recursos {
+        padding: 80px 0;
+    }
+
+    .topo {
+        padding: 80px 0;
+    }
+
+    .topo h1 {
+        font-size: 40px;
+    }
+
+    .frase {
+        padding: 65px 0;
+    }
+
+    .frase h2 {
+        font-size: 30px;
+    }
+
+    .emoji-sobre {
+        font-size: 110px;
+    }
+
+    .emoji {
+        font-size: 90px;
+        padding: 40px 0;
+    }
+
+    .card-numero .numero {
+        font-size: 38px;
+    }
+
+    /* Formulário à esquerda e lista à direita */
+    .layout-registro {
+        grid-template-columns: 5fr 7fr;
+        gap: 40px;
+    }
 }
